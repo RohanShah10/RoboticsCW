@@ -15,7 +15,7 @@ try:
 
     # Calculate encoder value for 90-degree turn (trial and error calibration may be needed)
     # This is robot-specific, and you may need to adjust this value.
-    encoder_value = 180  # Replace with the appropriate value for your setup
+    encoder_value = 232  # Replace with the appropriate value for your setup
 
     # Set motors to rotate for the turn
     BP.set_motor_position_relative(BP.PORT_A, -encoder_value)  # Motor A rotates backward
