@@ -29,7 +29,8 @@ try:
         print(error)
     
     BP.set_motor_power(BP.PORT_D, BP.MOTOR_FLOAT)    # float motor D
-    BP.set_motor_limits(BP.PORT_A, 50, 200)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
+    BP.set_motor_power(BP.PORT_A, BP.MOTOR_FLOAT)    # float motor A
+    # BP.set_motor_limits(BP.PORT_A, 50, 200)          # optionally set a power limit (in percent) and a speed limit (in Degrees Per Second)
     while True:
         # Each of the following BP.get_motor_encoder functions returns the encoder value.
         try:
